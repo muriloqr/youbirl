@@ -240,5 +240,4 @@ function proxima(that) {
 
 		menuHtml.innerHTML = '<h1>Você é ' + nome + '</h1> <img style="width: 100%;" src="'+ urlImg +'"> <h2> Gostou? Ajude nosso amigo BIRL GATES e clique em compartilhar abaixo dele!</h2> <img style="width: 100%;" src="/images/birl-gates.jpg">';
 	}
-	console.log(results)
 }
