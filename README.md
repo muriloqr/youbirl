@@ -1,3 +1,7 @@
-# testBirl
+# Bodybuilder bambam Teste
 
-a [Sails](http://sailsjs.org) application
+# Get Started
+```{r, engine='bash'}
+npm install
+npm start 
+```
