@@ -1,7 +1,7 @@
 // Iniciação de variáveis
 var perguntaHtml = document.getElementsByClassName('pergunta')[0];
 var escolhasHtml = document.getElementsByClassName('escolha');
-var menuHtml = document.getElementsByClassName('menu')[0];
+var menuHtml = document.getElementsByClassName('menu')[1];
 var perguntas = [
 {
 	titulo: 'Com que frequência você vai a academia?',
@@ -148,6 +148,14 @@ for (var i = 0; i < perguntas[a].escolhas.length ;i++) {
 	escolhasHtml[i].innerHTML = escolha.escolha; 
 }
 
+menuHtml.style.display = 'none';
+
+
+function boraProTeste() {
+	document.getElementsByClassName('menu')[0].style.display = 'none';
+	menuHtml.style.display = 'block';
+}
+
 function proxima(that) {
 	var obj;
 
@@ -240,5 +248,4 @@ function proxima(that) {
 
 		menuHtml.innerHTML = '<h1>Você é ' + nome + '</h1> <img style="width: 100%;" src="'+ urlImg +'"> <h2> Gostou? Ajude nosso amigo BIRL GATES e clique em compartilhar abaixo dele!</h2> <img style="width: 100%;" src="/images/birl-gates.jpg">';
 	}
-	console.log(results)
 }
